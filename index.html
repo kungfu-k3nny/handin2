@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Webpage</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mate+SC&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Mate+SC&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>A/B Testing</h1>
+    </header>
+    <section>
+        <p>I ran a simple A/B test on two different UI designs and analyzed the results. From these results, we drew conclusions on whether a design choice could have reasonably impacted user interaction.</p>
+    </section>
+    <section>
+        <h2>Part 1: Data Collection</h2>
+        <p>I ran an A/B test on a simple webpage that is responsible for scheduling appointments with a medical practitioner.</p>
+        <p>The target interaction was to schedule an appointment, and the measured metrics were:</p>
+        <ol>
+            <li>time spent on page</li>
+            <li>time before the user first clicks</li>
+            <li>total distance the cursor moves</li>
+            <li>number of clicks</li>
+            <li>whether or not the user misclicked</li>
+            <li>whether or not the user succeeded in scheduling the appointment</li>
+        </ol>
+        <p>The orignal webpage looked like this</p>
+        <img alt="webpage A" src="./assets/a_ss.png"/>
+        <p>And my updated webpage looked like this</p>
+        <img alt="webpage B" src="./assets/b_ss.png"/>
+    </section>
+    <section>
+        <h2>Part 2: Analysis</h2>
+        <h3>Creating Hypotheses</h3>
+        <p>There are three metrics that we are using to determine whether or not
+            my design choices reasonably impacted user interaction: Time spent on
+            page, misclick rate, and total distance of cursor movement. Below, I
+            dive into the details of why I used these metrics, the null
+            and alternative hypotheses for each of the metrics, and the reasoning
+            behind choosing these hypotheses.</p>
+        <ol>
+            <h4><li>Time spent on page</li></h4>
+            <ol type="i">
+                <li>More time spent on the page indicates a user confusion</li>
+                <li>The null hypothesis is that users spend the same amount of 
+                    time on webpage A as they spend on webpage B</li>
+                <li>The alternative hypothesis is that users spend more time on
+                    webpage A than they spend on webpage B</li>
+                <li>I believe that the null hypotheses will be rejected because
+                    webpage A has low color contrast in their buttons, their
+                    appointments are not ordered by calendar, and buttons of
+                    different functionalities appear the same. All of these 
+                    reasons combined may cause the user to take a longer time 
+                    to search for the appointment slot they are looking for
+                </li>
+                <li>The reasoning for this alternative hypothesis is that
+                    webpage B's increased color contrast, ordering of appointments
+                    by calendar, and side-by-side button layout, and differing
+                    button colors that depend on functionality could aid the user's
+                    pattern recognition ability to clearly identify the target
+                    interaction and make an appointment faster
+                </li>
+            </ol>
+            <h4><li>Misclick rate</li></h4>
+            <ol type="i">
+                <li>A higher misclick rate suggests a more misleading elements</li>
+                <li>The null hypothesis is that the rate at which users misclick is
+                    the same on webpage A as it is on webpage B</li>
+                <li>The alternative hypothesis is that the rate at which users 
+                    misclick is more on webpage A than it is on webpage B</li>
+                <li>I believe that the null hypotheses will be rejected because
+                    webpage A has low color contrast in their buttons, which makes
+                    it hard to read the text of the buttons. Furthermore, buttons of
+                    different functionalities appear the same visually and exist in
+                    the same column, which may mislead the user into thinking that
+                    the different buttons do the same thing. 
+                </li>
+                <li>The reasoning for this alternative hypothesis is that
+                    webpage B's increased color contrast, side-by-side button
+                    layout, and differing button colors based on functionality
+                    could aid the user's pattern recognition ability to clearly
+                    identify the target interaction and reduce the chance of a
+                    misclick.
+                </li>
+            </ol>
+            <h4><li>Total distance of cursor movement</li></h4>
+            <ol type="i">
+                <li>A higher distance of cursor movement indicates that the user is going 
+                    back and forth, which could mean that the webpage layout is difficult 
+                    to navigate</li>
+                <li>The null hypothesis is that the users move their cursors the 
+                    same amount on webpage A as they do on webpage B</li>
+                <li>The alternative hypothesis is that the users move their cursors
+                    the more on webpage A than they do on webpage B</li>
+                <li>I believe that the null hypotheses will be rejected because
+                    webpage A has low color contrast in their buttons, their
+                    appointments are not ordered by calendar, and buttons of
+                    different functionalities appear the same. All of these 
+                    reasons combined may cause the user to hover their cursors
+                    over misleading buttons before completing the target interaction.
+                </li>
+                <li>The reasoning for this alternative hypothesis is that
+                    webpage B's increased color contrast, ordering of appointments
+                    by calendar, and side-by-side button layout, and differing
+                    button colors that depend on functionality could aid the user's
+                    pattern recognition ability to clearly identify the target
+                    interaction and execute it without wasted cursor movement.
+                </li>
+            </ol>
+        </ol>
+        <h3>About the Data</h3>
+    </section>
+    <section>
+        <h2>Part 3: Responsive Redesign</h2>
+        <img alt="responsive redesign" src="./assets/responsive_redesign.png"/>
+        <br>
+        <a href="https://kungfu-k3nny.github.io/cs1300-responsive-redesign/#" target="_blank">Visit new website</a>
+    </section>
+    <section>
+        <p>My main takeaway was that refining details for accessibility go a long way. Although work is meticulous, the result will look amazing, and I bet users with disabilities would love the improvmenets.</p>
+    </section>
+    <footer>
+        <p>© 2024 Kenneth Liou</p>
+    </footer>
+</body>
+</html>

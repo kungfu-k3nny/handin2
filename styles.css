@@ -1,0 +1,64 @@
+body {
+    font-family: 'cabin', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header, section, footer {
+    font-family: 'montserrat', sans-serif;
+    margin: auto;
+    width: 80%;
+    max-width: 960px;
+}
+
+header {
+    padding: 2em 0;
+    background-color: #4c9aee;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+h2 {
+    color: #4c9aee;
+}
+
+h3 {
+    color: #333;
+    font-size: 1.25em;
+    font-weight: normal;
+}
+
+
+h4 {
+    color: #333;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+p {
+    line-height: 1.6;
+}
+
+footer {
+    padding: 1em 0;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    margin-top: 2em;
+}
+
+img {
+    width: auto; /* Sets the width of all images to 200 pixels */
+    height: 400px; /* Keeps the aspect ratio of each image */
+}
+
+li {
+    padding-bottom: 8px; /* Adjust the value as needed */
+}
