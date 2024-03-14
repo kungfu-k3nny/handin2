@@ -44,160 +44,164 @@
             behind choosing these hypotheses.</p>
         <ol>
             <h4><li>Time spent on page</li></h4>
+            <p>More time spent on the page indicates a user confusion</p>
             <ol type="i">
-                <li>More time spent on the page indicates a user confusion</li>
                 <li>The null hypothesis is that users spend the same amount of 
                     time on webpage A as they spend on webpage B</li>
-                <li>The alternative hypothesis is that users spend more time on
-                    webpage A than they spend on webpage B</li>
-                <li>I believe that the null hypotheses will be rejected because
+                <p>I believe that the null hypotheses will be rejected because
                     webpage A has low color contrast in their buttons, their
                     appointments are not ordered by calendar, and buttons of
                     different functionalities appear the same. All of these 
                     reasons combined may cause the user to take a longer time 
                     to search for the appointment slot they are looking for
-                </li>
-                <li>The reasoning for this alternative hypothesis is that
+                </p>
+                <li>The alternative hypothesis is that users spend more time on
+                    webpage A than they spend on webpage B</li>
+
+                <p>The reasoning for this alternative hypothesis is that
                     webpage B's increased color contrast, ordering of appointments
                     by calendar, and side-by-side button layout, and differing
                     button colors that depend on functionality could aid the user's
                     pattern recognition ability to clearly identify the target
                     interaction and make an appointment faster
-                </li>
+                </p>
             </ol>
             <h4><li>Misclick rate</li></h4>
+            <p>A higher misclick rate suggests a more misleading elements</p>
             <ol type="i">
-                <li>A higher misclick rate suggests a more misleading elements</li>
                 <li>The null hypothesis is that the rate at which users misclick is
                     the same on webpage A as it is on webpage B</li>
-                <li>The alternative hypothesis is that the rate at which users 
-                    misclick is more on webpage A than it is on webpage B</li>
-                <li>I believe that the null hypotheses will be rejected because
+                <p>I believe that the null hypotheses will be rejected because
                     webpage A has low color contrast in their buttons, which makes
                     it hard to read the text of the buttons. Furthermore, buttons of
                     different functionalities appear the same visually and exist in
                     the same column, which may mislead the user into thinking that
                     the different buttons do the same thing. 
-                </li>
-                <li>The reasoning for this alternative hypothesis is that
+                </p>
+                <li>The alternative hypothesis is that the rate at which users 
+                    misclick is more on webpage A than it is on webpage B</li>
+                <p>The reasoning for this alternative hypothesis is that
                     webpage B's increased color contrast, side-by-side button
                     layout, and differing button colors based on functionality
                     could aid the user's pattern recognition ability to clearly
                     identify the target interaction and reduce the chance of a
                     misclick.
-                </li>
+                </p>
             </ol>
             <h4><li>Total distance of cursor movement</li></h4>
+            <p>A higher distance of cursor movement indicates that the user is going 
+                back and forth, which could mean that the webpage layout is difficult 
+                to navigate</p>
             <ol type="i">
-                <li>A higher distance of cursor movement indicates that the user is going 
-                    back and forth, which could mean that the webpage layout is difficult 
-                    to navigate</li>
                 <li>The null hypothesis is that the users move their cursors the 
                     same amount on webpage A as they do on webpage B</li>
-                <li>The alternative hypothesis is that the users move their cursors
-                    the more on webpage A than they do on webpage B</li>
-                <li>I believe that the null hypotheses will be rejected because
+
+                <p>I believe that the null hypotheses will be rejected because
                     webpage A has low color contrast in their buttons, their
                     appointments are not ordered by calendar, and buttons of
                     different functionalities appear the same. All of these 
                     reasons combined may cause the user to hover their cursors
                     over misleading buttons before completing the target interaction.
-                </li>
-                <li>The reasoning for this alternative hypothesis is that
+                </p>
+
+                <li>The alternative hypothesis is that the users move their cursors
+                    the more on webpage A than they do on webpage B</li>
+
+                <p>The reasoning for this alternative hypothesis is that
                     webpage B's increased color contrast, ordering of appointments
                     by calendar, and side-by-side button layout, and differing
                     button colors that depend on functionality could aid the user's
                     pattern recognition ability to clearly identify the target
                     interaction and execute it without wasted cursor movement.
-                </li>
+                </p>
             </ol>
         </ol>
         <h3>Run Statistical Tests on the Data</h3>
         <ol>
             <h4><li>Time spent on page</li></h4>
+            <p>I chose to use a one-tailed t-test since it is useful for
+                determining whether the mean value of a single group is
+                greater than the mean of another group. 
+            </p>
             <ol type="i">
-                <li>I chose to use a one-tailed t-test since it is useful for
-                    determining whether the mean value of a single group is
-                    greater than the mean of another group. 
-                </li>
-                <li>The difference between versions A and B with respect to
-                    time spent on page is statistically significant</li>
+                <p>The difference between versions A and B with respect to
+                    time spent on page is statistically significant</p>
                 <li>Degrees of Freedom: 22</li>
-                - There are 22 independent values in a calculation that are
-                free to vary, adjusting the shape of the statistical distribution.
-                As the degrees of freedom increase, the distribution becomes
-                narrower and more closely resembles the standard normal
-                distribution, indicating reduced variability and increased
-                accuracy in the estimation of the population parameter.
+                <p>- There are 22 independent values in a calculation that are
+                    free to vary, adjusting the shape of the statistical distribution.
+                    As the degrees of freedom increase, the distribution becomes
+                    narrower and more closely resembles the standard normal
+                    distribution, indicating reduced variability and increased
+                    accuracy in the estimation of the population parameter.</p>
                 <li>T-score: -4.421388035</li>
-                - This means that the mean amount of time that users spend on
-                webpage B is roughly 4.4 standard deviations away from the mean amount
-                of time that users spend on webpage A.
+                <p>- This means that the mean amount of time that users spend on
+                    webpage B is roughly 4.4 standard deviations away from the mean amount
+                    of time that users spend on webpage A.</p>
                 <li>P-value (A < B): 0.0001002924201</li>
-                - This means that, assuming the null hypothesis is true, the
-                probability that we observe users spending this much time on
-                webpage B is 0.01%. This p-value is below the threshold of 0.05,
-                which makes the difference in metrics statistically significant,
-                allowing us to reject the null hypothesis.
-                <li>We reject the null hypothesis that users spend the same
-                    amount of time on webpage A as they spend on webpage B</li>
+                <p>- This means that, assuming the null hypothesis is true, the
+                    probability that we observe users spending this much time on
+                    webpage B is 0.01%. This p-value is below the threshold of 0.05,
+                    which makes the difference in metrics statistically significant,
+                    allowing us to reject the null hypothesis.</p>
             </ol>
+            <p>We reject the null hypothesis that users spend the same
+                amount of time on webpage A as they spend on webpage B</p>
             <h4><li>Misclick rate</li></h4>
+            <p>I chose to use a chi-squared test it is useful for determining
+                how likely a distribution of categorical data, like whether or
+                not a user misclicks, is categorical.
+            </p>
             <ol type="i">
-                <li>I chose to use a chi-squared test it is useful for determining
-                    how likely a distribution of categorical data, like whether or
-                    not a user misclicks, is categorical.
-                </li>
-                <li>The difference between versions A and B with respect to
-                    misclick rate is statistically significant</li>
+                <p>The difference between versions A and B with respect to
+                    misclick rate is statistically significant</p>
                 <li>Degrees of freedom: 1</li>
-                - There is 1 independent value in a calculation that is
-                free to vary, adjusting the shape of the statistical distribution.
-                As the degrees of freedom increase, the distribution becomes
-                narrower and more closely resembles the standard normal
-                distribution, indicating reduced variability and increased
-                accuracy in the estimation of the population parameter.
+                <p>- There is 1 independent value in a calculation that is
+                    free to vary, adjusting the shape of the statistical distribution.
+                    As the degrees of freedom increase, the distribution becomes
+                    narrower and more closely resembles the standard normal
+                    distribution, indicating reduced variability and increased
+                    accuracy in the estimation of the population parameter.</p>
                 <li>Chi^2: 6.063454759</li>
-                - This value is compared to a chi-squared distribution table at a
-                specific significance level and degree of freedom to determine if
-                any observed differences occured by chance
+                <p>- This value is compared to a chi-squared distribution table at a
+                    specific significance level and degree of freedom to determine if
+                    any observed differences occured by chance</p>
                 <li>P-value: 0.01380074489</li>
-                - This means that, assuming the null hypothesis is true, the
-                probability that we observe users not misclicking once on
-                webpage B is 1.38%. This p-value is below the threshold of 0.05,
-                which makes the difference in metrics statistically significant,
-                allowing us to reject the null hypothesis.
-                <li>We reject the null hypothesis that the rate at which users
-                    misclick is the same on webpage A as it is on webpage B</li>
+                <p>- This means that, assuming the null hypothesis is true, the
+                    probability that we observe users not misclicking once on
+                    webpage B is 1.38%. This p-value is below the threshold of 0.05,
+                    which makes the difference in metrics statistically significant,
+                    allowing us to reject the null hypothesis.</p>
             </ol>
+            <p>We reject the null hypothesis that the rate at which users
+                misclick is the same on webpage A as it is on webpage B</p>
             <h4><li>Total distance of cursor movement</li></h4>
+            <p>I chose to use a one-tailed t-test since it is useful for
+                determining whether the mean value of a single group is
+                greater than the mean of another group.
+            </p>
             <ol type="i">
-                <li>I chose to use a one-tailed t-test since it is useful for
-                    determining whether the mean value of a single group is
-                    greater than the mean of another group.
-                </li>
-                <li>The difference between versions A and B with respect to
-                    total distnace of cursor movement is statistically significant</li>
+                <p>The difference between versions A and B with respect to
+                    total distnace of cursor movement is statistically significant</p>
                 <li>Degrees of Freedom: 22</li>
-                - There are 22 independent values in a calculation that are
-                free to vary, adjusting the shape of the statistical distribution.
-                As the degrees of freedom increase, the distribution becomes
-                narrower and more closely resembles the standard normal
-                distribution, indicating reduced variability and increased
-                accuracy in the estimation of the population parameter.
+                <p>- There are 22 independent values in a calculation that are
+                    free to vary, adjusting the shape of the statistical distribution.
+                    As the degrees of freedom increase, the distribution becomes
+                    narrower and more closely resembles the standard normal
+                    distribution, indicating reduced variability and increased
+                    accuracy in the estimation of the population parameter.</p>
                 <li>T-score: -4.628889264</li>
-                - This means that the mean amount of time that users spend on
-                webpage B is roughly 4.6 standard deviations away from the mean amount
-                of time that users spend on webpage A.
+                <p>- This means that the mean amount of time that users spend on
+                    webpage B is roughly 4.6 standard deviations away from the mean amount
+                    of time that users spend on webpage A.</p>
                 <li>P-value (A < B): 0.00006251348512</li>
-                - This means that, assuming the null hypothesis is true, the
-                probability that we observe users spending this much time on
-                webpage B is 0.006%. This p-value is below the threshold of 0.05,
-                which makes the difference in metrics statistically significant,
-                allowing us to reject the null hypothesis.
-                <li>We reject the null hypothesis that the users move their
-                    cursors the same amount on webpage A as they do on webpage B</li>
+                <p>- This means that, assuming the null hypothesis is true, the
+                    probability that we observe users spending this much time on
+                    webpage B is 0.006%. This p-value is below the threshold of 0.05,
+                    which makes the difference in metrics statistically significant,
+                    allowing us to reject the null hypothesis.</p>
             </ol>
+            <p>We reject the null hypothesis that the users move their
+                cursors the same amount on webpage A as they do on webpage B</p>
         </ol>
         <h3>Summary Statistics</h3>
         <p>For webpage A, there was 23 data points, and for webpage B, there
