@@ -60,5 +60,6 @@ img {
 }
 
 li {
+    padding-top: 8px;
     padding-bottom: 8px; /* Adjust the value as needed */
 }

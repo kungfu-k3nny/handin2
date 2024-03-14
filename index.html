@@ -116,37 +116,115 @@
         <ol>
             <h4><li>Time spent on page</li></h4>
             <ol type="i">
-                <li>I chose to use a one-tailed t-test since the alternative
-                    hypothesis says that the time spent on webpage B is expected
-                    to be less than the time spent on webpage A.
+                <li>I chose to use a one-tailed t-test since it is useful for
+                    determining whether the mean value of a single group is
+                    greater than the mean of another group. 
                 </li>
+                <li>The difference between versions A and B with respect to
+                    time spent on page is statistically significant</li>
+                <li>Degrees of Freedom: 22</li>
+                - There are 22 independent values in a calculation that are
+                free to vary, adjusting the shape of the statistical distribution.
+                As the degrees of freedom increase, the distribution becomes
+                narrower and more closely resembles the standard normal
+                distribution, indicating reduced variability and increased
+                accuracy in the estimation of the population parameter.
+                <li>T-score: -4.421388035</li>
+                - This means that the mean amount of time that users spend on
+                webpage B is roughly 4.4 standard deviations away from the mean amount
+                of time that users spend on webpage A.
+                <li>P-value (A < B): 0.0001002924201</li>
+                - This means that, assuming the null hypothesis is true, the
+                probability that we observe users spending this much time on
+                webpage B is 0.01%. This p-value is below the threshold of 0.05,
+                which makes the difference in metrics statistically significant,
+                allowing us to reject the null hypothesis.
+                <li>We reject the null hypothesis that users spend the same
+                    amount of time on webpage A as they spend on webpage B</li>
             </ol>
             <h4><li>Misclick rate</li></h4>
             <ol type="i">
-                <li>I chose to use a one-tailed t-test since the alternative
-                    hypothesis says that the misclick rate for webpage B is
-                    expected to be less than the misclick rate for webpage A.
+                <li>I chose to use a chi-squared test it is useful for determining
+                    how likely a distribution of categorical data, like whether or
+                    not a user misclicks, is categorical.
                 </li>
+                <li>The difference between versions A and B with respect to
+                    misclick rate is statistically significant</li>
+                <li>Degrees of freedom: 1</li>
+                - There is 1 independent value in a calculation that is
+                free to vary, adjusting the shape of the statistical distribution.
+                As the degrees of freedom increase, the distribution becomes
+                narrower and more closely resembles the standard normal
+                distribution, indicating reduced variability and increased
+                accuracy in the estimation of the population parameter.
+                <li>Chi^2: 6.063454759</li>
+                - This value is compared to a chi-squared distribution table at a
+                specific significance level and degree of freedom to determine if
+                any observed differences occured by chance
+                <li>P-value: 0.01380074489</li>
+                - This means that, assuming the null hypothesis is true, the
+                probability that we observe users not misclicking once on
+                webpage B is 1.38%. This p-value is below the threshold of 0.05,
+                which makes the difference in metrics statistically significant,
+                allowing us to reject the null hypothesis.
+                <li>We reject the null hypothesis that the rate at which users
+                    misclick is the same on webpage A as it is on webpage B</li>
             </ol>
             <h4><li>Total distance of cursor movement</li></h4>
             <ol type="i">
-                <li>I chose to use a one-tailed t-test since the alternative
-                    hypothesis says that the total distance of cursor movement for
-                    webpage B is expected to be less than the total distance of
-                    cursor movement for webpage A.
+                <li>I chose to use a one-tailed t-test since it is useful for
+                    determining whether the mean value of a single group is
+                    greater than the mean of another group.
                 </li>
+                <li>The difference between versions A and B with respect to
+                    total distnace of cursor movement is statistically significant</li>
+                <li>Degrees of Freedom: 22</li>
+                - There are 22 independent values in a calculation that are
+                free to vary, adjusting the shape of the statistical distribution.
+                As the degrees of freedom increase, the distribution becomes
+                narrower and more closely resembles the standard normal
+                distribution, indicating reduced variability and increased
+                accuracy in the estimation of the population parameter.
+                <li>T-score: -4.628889264</li>
+                - This means that the mean amount of time that users spend on
+                webpage B is roughly 4.6 standard deviations away from the mean amount
+                of time that users spend on webpage A.
+                <li>P-value (A < B): 0.00006251348512</li>
+                - This means that, assuming the null hypothesis is true, the
+                probability that we observe users spending this much time on
+                webpage B is 0.006%. This p-value is below the threshold of 0.05,
+                which makes the difference in metrics statistically significant,
+                allowing us to reject the null hypothesis.
+                <li>We reject the null hypothesis that the users move their
+                    cursors the same amount on webpage A as they do on webpage B</li>
             </ol>
         </ol>
         <h3>Summary Statistics</h3>
+        <p>For webpage A, there was 23 data points, and for webpage B, there
+            were 20 data points. The two sample sizes are pretty similar which
+            makes for a better comparison betwene the two samples. For the
+            total amount of time users spent on the page, the mean for webpage
+            A was roughly 22325 milliseconds while the mean for webpage B was
+            roughly 8071 milliseconds. The median values were 20237 and 8199
+            milliseconds respectively. This means that the distributions were
+            skewed to the right for webpage A and skewed to the left for webpage
+            B. For the total distance of cursor movement, the mean for webpage
+            A was roughly 6471 pixels while the mean for webpage B was roughly
+            2162 pixels. The median values were 5533 and 2118 pixels respectively.
+            This means that the distributions were skewed to the right for both
+            webpages. Cumulatively, these tests seem to suggest that the changes
+            made for webpage B were able to streamline the user's decision making
+            process by reducing the time spent to complete the task, reducing
+            the rate of misclicking, and reducing the amount of movement needed
+            to complete the task.
+        </p>
     </section>
     <section>
-        <h2>Part 3: Responsive Redesign</h2>
-        <img alt="responsive redesign" src="./assets/responsive_redesign.png"/>
-        <br>
-        <a href="https://kungfu-k3nny.github.io/cs1300-responsive-redesign/#" target="_blank">Visit new website</a>
-    </section>
-    <section>
-        <p>My main takeaway was that refining details for accessibility go a long way. Although work is meticulous, the result will look amazing, and I bet users with disabilities would love the improvmenets.</p>
+        <h2>Takeaways</h2>
+        <p>My main takeaway was that A/B testing is much more meticulous and time consuming
+            than I had expected, but that the numerical results are a more reliable way
+            to quantitatively back up design decisions that seem logically correct. 
+        </p>
     </section>
     <footer>
         <p>© 2024 Kenneth Liou</p>
